@@ -1,0 +1,991 @@
+/* 
+Template Name: Xenon - Multipurpose Personal Portfolio HTML Template
+Author: Abdullah Nahian
+Version: 1.0
+*/
+
+
+/* Table of contents
+====================
+
+0. Base Css
+1. Section Title CSS
+2. Header Area CSS
+3. Welcome Area CSS
+4. About Area CSS
+5. Services Area CSS
+6. Portfolio Area CSS
+7. Counter Area CSS
+8. Timeline Area CSS
+9. Testimonila Area CSS
+10. Price Area CSS
+11. Team Area CSS
+12. Blog Area CSS
+13. Hire Me Area CSS
+14. Contact Area CSS
+15. Footer Area CSS
+
+*/
+
+
+/* 0. Base CSS */
+
+.alignleft {
+	float: left;
+	margin-right: 15px;
+}
+
+.alignright {
+	float: right;
+	margin-left: 15px;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto 15px;
+}
+
+a:focus {
+	outline: 0 solid
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: 700;
+	padding: 0;
+	font-family: 'Poppins', serif;
+}
+
+p {
+	font-size: 14px;
+	margin-bottom: 0px
+}
+
+html,
+body {
+	height: 100%
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fff;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 1.7em;
+	color: #333;
+}
+
+a,
+a:hover,
+a:focus,
+input,
+textarea {
+	text-decoration: none;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+	-webkit-transition: .4s;
+	transition: .4s
+}
+
+a:hover {
+	color: #ff3636
+}
+
+.pt-100 {
+	padding-top: 100px;
+}
+
+.pb-100 {
+	padding-bottom: 100px;
+}
+
+.mt-100 {
+	margin-top: 100px;
+}
+
+.mb-100 {
+	margin-bottom: 100px;
+}
+
+.pt-50 {
+	padding-top: 50px;
+}
+
+.pb-70 {
+	padding-bottom: 70px;
+}
+
+.pb-50 {
+	padding-bottom: 50px;
+}
+
+.mt-50 {
+	margin-top: 50px;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+a.box-btn {
+	display: inline-block;
+	background-color: #ff3636;
+	color: #fff;
+	padding: 10px 30px;
+	font-size: 16px;
+	text-transform: capitalize;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+a.box-btn:hover {
+	background-color: #222;
+	color: #fff;
+}
+
+a.box_btn:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #CC5B00;
+	left: -100%;
+	top: 0;
+	-webkit-transition: .5s;
+	transition: .5s;
+	z-index: -1;
+}
+
+a.box_btn {
+	overflow: hidden;
+	z-index: 2;
+	-webkit-transition: .5s;
+	transition: .5s;
+	position: relative
+}
+
+a.box_btn:hover:before {
+	left: 0;
+	z-index: -1;
+}
+
+
+/* 1. Section Title CSS */
+
+.section-title {
+	margin-bottom: 60px;
+}
+
+.section-title p {
+	color: #777;
+	font-size: 16px;
+}
+
+.section-title h4 {
+	text-transform: capitalize;
+	font-size: 40px;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+.section-title h4:before {
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 2px;
+	background-color: #ff3636;
+	bottom: 0;
+	left: 50%;
+	margin-left: -30px;
+}
+
+.section-title h4:after {
+	position: absolute;
+	background-color: #ff3636;
+	content: "";
+	width: 10px;
+	height: 10px;
+	bottom: -4px;
+	left: 50%;
+	margin-left: -5px;
+	border-radius: 50%;
+}
+
+
+/* 2. Header Area CSS */
+
+.sticky-header {
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	right: 0;
+	width: 100%;
+	color: #fff;
+	padding: 20px 0;
+}
+
+.sticky-header a {
+	color: #fff;
+}
+
+.logo {
+	margin-top: 15px;
+}
+
+.logo a {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.navbar-brand {
+	color: #fff !important;
+	font-weight: 600;
+	text-transform: capitalize;
+	font-size: 20px;
+	border: 1px solid #eee;
+	padding: 5px 25px;
+}
+
+.header.header-fixed.sticky .navbar-brand {
+	color: #333 !important;
+	border-color: transparent;
+}
+
+.header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	padding: 10px 0;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.header a {
+	color: #fff;
+}
+
+.header.sticky {
+	background-color: #fff;
+	box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+	-webkit-transition: .3s;
+	transition: .3s;
+	padding: 5px 0
+}
+
+.header.sticky a {
+	color: #333;
+}
+
+.mainmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.mainmenu ul li {
+	display: inline-block;
+}
+
+.mainmenu ul li a {
+	display: block;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.mainmenu ul li.current a,
+.mainmenu ul li a:hover {
+	color: #ff3636;
+}
+
+
+/* 3. Welcome Area CSS */
+
+.welcome-area {
+	position: relative;
+	background-image: url("../img/side.jpg");
+	background-size: cover;
+	background-position: center;
+	z-index: 2;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+}
+
+.welcome-area:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: #333;
+	opacity: .85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+}
+
+.welcome-content h4 {
+	font-size: 80px;
+	font-weight: 900;
+}
+
+.welcome-content ul li {
+	display: inline-block;
+	text-transform: capitalize;
+	font-size: 22px;
+}
+
+.welcome-content ul {
+	list-style: none;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.welcome-content h4 span {
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.welcome-content h2 {
+	margin: 20px 0;
+	font-size: 65px;
+	font-weight: bold;
+}
+
+.welcome-content p {
+	font-size: 18px;
+	line-height: 1.8;
+	margin-bottom: 20px;
+	margin-top: -10px;
+}
+
+
+/* 4. About Area CSS */
+
+.about-desc h3 {
+	font-size: 40px;
+	font-weight: 600;
+	text-transform: capitalize;
+	color: #ff3636;
+}
+
+.about-desc h4 {
+	font-weight: 400;
+	text-transform: capitalize;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.about-desc p {
+	margin-bottom: 20px;
+}
+
+.about-desc ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 49%;
+	margin-right: 1%;
+	overflow: hidden;
+}
+
+.about-desc ul li {
+	padding-bottom: 5px;
+}
+
+.about-desc ul li i.fa {
+	padding-right: 5px;
+	color: #ff3636;
+}
+
+.about-img img {
+	width: 100%;
+}
+
+.about-desc li {
+	text-transform: capitalize;
+}
+
+.about-desc ul {
+	margin-bottom: 20px;
+}
+
+
+/* 5. Services Area CSS */
+
+.services-area {
+	background-color: #f6f6f6;
+}
+
+.single-service {
+	border: 1px solid #eee;
+	padding: 30px 10px;
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.single-service h4 {
+	text-transform: capitalize;
+	font-size: 22px;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.single-service i.fa {
+	width: 60px;
+	height: 60px;
+	background-color: #ff3636;
+	font-size: 25px;
+	color: #fff;
+	line-height: 60px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.single-service {
+	background-color: #fff;
+}
+
+.single-service p {
+	color: #666;
+}
+
+.single-service i.fa {
+	-webkit-transition: .4s;
+	transition: .4s
+}
+
+.single-service:hover i.fa {
+	border-radius: 50%;
+}
+
+
+/* 6. Portfolio Area CSS */
+
+.portfolio-menu button {
+	background-color: transparent;
+	border: 0px;
+	cursor: pointer;
+}
+
+.single-portfolio {
+	position: relative;
+}
+
+.single-portfolio img {
+	width: 100%;
+}
+
+.single-portfolio:hover .portfolio-hover {
+	-webkit-transform: scale(1);
+	transform: scale(1)
+}
+
+.portfolio-hover {
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: .5s;
+	transition: .5s
+}
+
+.portfolio-content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100%;
+	height: auto;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+.portfolio-hover:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	left: 0;
+	top: 0;
+	opacity: .85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+}
+
+.portfolio-content h3 a {
+	color: #fff;
+	font-size: 20px;
+	text-transform: capitalize;
+	margin: 0px;
+	display: block;
+}
+
+.portfolio-content h3 a span {
+	display: block;
+	font-weight: 300;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.portfolio-content h3 a i.fa {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	line-height: 40px;
+	margin: 0 auto;
+	margin-bottom: 12px;
+}
+
+.portfolio-menu {
+	margin-bottom: 40px;
+}
+
+.portfolio-menu buttton {
+	background-color: #635CDB;
+	border: 0px;
+}
+
+.portfolio-menu button {
+	background-color: transparent;
+	border: 1px solid #635CDB;
+	color: black;
+	padding: 3px 15px;
+	cursor: pointer;
+}
+
+.portfolio-menu button.active {
+	background-color: #635CDB;
+	color: #fff;
+}
+
+
+/* 7. Counter Area CSS */
+
+.counter-area {
+	background-color: #0F1113;
+}
+
+.counter-area .section-title h4 {
+	color: #fff;
+}
+
+.counter-area .section-title p {
+	color: #fff;
+}
+
+.single-counter {
+	text-align: center;
+	color: #fff;
+}
+
+.single-counter i.fa {
+	background-color: #e73d28;
+	color: #fff;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 20px;
+}
+
+.single-counter h4 {
+	margin: 15px 0;
+	font-size: 35px;
+	font-weight: 600;
+}
+
+.single-counter p {
+	margin-top: -10px;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+
+
+/* 8. Timeline Area CSS */
+
+ul.timeline-list {
+	position: relative;
+	margin: 0;
+	padding: 0
+}
+
+ul.timeline-list:before {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 100%;
+	background-color: #ff3636;
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+ul.timeline-list li {
+	position: relative;
+	clear: both;
+	display: table;
+}
+
+.timeline_content {
+	border: 2px solid #ff3636;
+	background-color: #fff
+}
+
+ul.timeline-list li .timeline_content {
+	width: 45%;
+	color: #333;
+	padding: 30px;
+	float: left;
+	text-align: right;
+}
+
+ul.timeline-list li:nth-child(2n) .timeline_content {
+	float: right;
+	text-align: left;
+}
+
+.timeline_content h4 {
+	font-size: 22px;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+ul.timeline-list li:before {
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-color: #ff3636;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+.timeline_content span {
+	font-size: 18px;
+	font-weight: 500;
+	font-family: poppins;
+	color: #ff3636;
+}
+
+
+/* 9. Testimonila Area CSS */
+
+.testimonials-area .section-title p {
+	color: #fff;
+}
+
+.testimonials-area {
+	background-color: #0F1113;
+	color: #fff;
+}
+
+.single-testimonial img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100px;
+	border-radius: 50%;
+}
+
+.single-testimonial p {
+	margin: 30px 0;
+}
+
+.single-testimonial h4 {
+	font-size: 20px;
+	text-transform: capitalize;
+}
+
+.single-testimonial h4 span {
+	display: block;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 300;
+	margin-top: 5px;
+}
+
+
+/* 10. Price Area CSS */
+
+.price-area {
+	background-color: #f6f6f6;
+}
+
+.single-price {
+	background-color: #fff;
+	padding: 20px;
+}
+
+.single-price h4 {
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.price-box {
+	padding: 25px;
+}
+
+.price-box h5 {
+	font-size: 45px;
+}
+
+.single-price ul {
+	list-style: none;
+	margin-bottom: 25px;
+}
+
+.single-price ul li {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+
+
+/* 11. Team Area CSS */
+
+.single-team {
+	position: relative;
+}
+
+.single-team img {
+	width: 100%;
+}
+
+.team-hover {
+	background-color: #222;
+	color: #fff;
+	position: absolute;
+	bottom: -107px;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	-webkit-transition: .4s;
+	transition: .4s
+}
+
+.team-hover h4 {
+	font-size: 20px;
+	text-transform: capitalize;
+}
+
+.team-hover h4 span {
+	display: block;
+	font-size: 14px;
+	font-weight: 300;
+	margin: 10px 0;
+}
+
+.team-hover a {
+	display: inline-block;
+	color: #fff;
+	padding: 0 5px;
+}
+
+.single-team:hover .team-hover {
+	bottom: 0;
+}
+
+.single-team {
+	overflow: hidden;
+}
+
+
+/* 12. Blog Area CSS */
+
+.single-blog {
+	text-align: left;
+}
+
+.single-blog h4 {
+	font-size: 18px;
+	text-transform: capitalize;
+	font-weight: 500;
+	margin-top: 35px;
+}
+
+.single-blog p {
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+
+.blog-img img {
+	width: 100%;
+}
+
+.blog-area {
+	background-color: #f6f6f6;
+}
+
+.single-blog {
+	background-color: #fff;
+	padding: 15px;
+}
+
+.blog-img {
+	margin: -15px;
+}
+
+
+/* 13. Hire Me Area CSS */
+
+.hire-area {
+	background-image: url("../img/hire-me.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	position: relative;
+	z-index: 2;
+}
+
+.hire-area:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: #333;
+	opacity: .9;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	z-index: -1;
+}
+
+.hire-area h4 {
+	text-transform: capitalize;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.hire-area p {
+	margin-bottom: 25px;
+	margin-top: 15px;
+}
+
+
+/* 14. Contact Area CSS */
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	border: 1px solid #eee;
+	padding: 5px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+.page-title {
+	text-align: left;
+	font-size: 20px;
+	text-transform: capitalize;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.contact-form input[type="submit"] {
+	background-color: #ff3636;
+	color: #fff;
+	border: 0px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.contact-address ul {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.contact-address ul li {
+	position: relative;
+	font-size: 18px;
+	padding-left: 30px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.contact-address ul li i.fa {
+	position: absolute;
+	left: 0;
+	top: 5px;
+	font-size: 20px;
+}
+
+.contact-address li {
+	font-size: 22px;
+	font-family: open sans;
+}
+
+.contact-address li:last-child {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+.contact-address ul li span {
+	display: block;
+	font-weight: 600;
+}
+
+
+/* 15. Footer Area CSS */
+
+.footer-area {
+	background-color: #333;
+	color: #fff;
+	padding: 50px 0;
+}
+
+.footer-area p {
+	font-size: 40px;
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
+.footer-area p.copy {
+	font-size: 16px;
+	font-weight: 400;
+	border-top: 1px solid #777;
+	padding-top: 50px;
+}
+.footer-area a {
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
